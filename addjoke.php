@@ -10,7 +10,7 @@ if(isset($_POST['joketext'])){
         joketext = :joketext,
         jokedate = CURDATE(),
         jokeimg = :jokeimg,
-        authorid = :authorid';
+        authorid = 1';
     
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(':joketext', $_POST['joketext']);
